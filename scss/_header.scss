@@ -1,7 +1,13 @@
 
 .landing header, .detail header {
     padding: 0 10% 40px;
-    max-width: 560px;
+    max-width: 700px;
+    .tacks:before{
+    	left: -15%;
+    }
+    .tacks:after{
+    	right: -15%;
+    }
 	.topNav {
 		right: 10%;
 	}

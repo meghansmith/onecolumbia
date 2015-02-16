@@ -438,7 +438,11 @@ p.date2 {
     page-break-after: avoid; } }
 .landing header, .detail header {
   padding: 0 10% 40px;
-  max-width: 560px; }
+  max-width: 700px; }
+  .landing header .tacks:before, .detail header .tacks:before {
+    left: -15%; }
+  .landing header .tacks:after, .detail header .tacks:after {
+    right: -15%; }
   .landing header .topNav, .detail header .topNav {
     right: 10%; }
   .landing header form, .detail header form {
@@ -574,6 +578,13 @@ a.menuButton {
       text-align: center;
       vertical-align: middle;
       padding-top: 15px; } }
+
+nav.tacks .tacks:before {
+  left: -15px;
+  top: -15px; }
+nav.tacks .tacks:after {
+  right: -15px;
+  top: -15px; }
 
 nav.catNav {
   background-color: #fff;
