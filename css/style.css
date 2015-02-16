@@ -681,7 +681,7 @@ div.container {
     .event, .event1, .eventS {
       margin-left: 15px;
       float: left;
-      width: 70%; } }
+      width: 65%; } }
   .event img, .event1 img, .eventS img {
     width: 40%;
     float: left;
@@ -816,7 +816,7 @@ main.eventDetail p {
 .home h2 > a {
   color: #fff; }
 .home .featEvent {
-  margin-top: 30px;
+  margin-top: 60px;
   position: relative;
   clear: both;
   border: 15px solid #333;
@@ -874,14 +874,21 @@ main.eventDetail p {
         position: absolute;
         bottom: 10px;
         right: 0; } }
+.home div.eventTack {
+  margin-top: 60px; }
+  @media (min-width: 900px) {
+    .home div.eventTack {
+      width: 63%;
+      float: left;
+      margin-right: 3%;
+      margin-bottom: 60px; } }
 .home .eventsDate {
   border: 15px solid #333;
   background-image: url("../images/circletrans2.png");
   background-size: cover;
   background-position: center;
   background-color: #fff;
-  box-shadow: 0 5px 16px -3px rgba(0, 0, 0, 0.75);
-  margin-top: 60px; }
+  box-shadow: 0 5px 16px -3px rgba(0, 0, 0, 0.75); }
   .home .eventsDate h2 {
     background-color: #333;
     color: #fff; }
@@ -892,12 +899,6 @@ main.eventDetail p {
     color: #fff;
     background-color: #333;
     border-color: #333; }
-  @media (min-width: 900px) {
-    .home .eventsDate {
-      width: 63%;
-      float: left;
-      margin-right: 3%;
-      margin-bottom: 60px; } }
   .home .eventsDate .typeTag {
     background-color: #fff;
     width: 30%; }

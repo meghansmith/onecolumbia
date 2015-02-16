@@ -3,7 +3,7 @@
 		color: #fff;
 	}
 	.featEvent {
-		margin-top: 30px;
+		margin-top: 60px;
 		position: relative;
 		clear: both;
 		@include borderBack;
@@ -74,24 +74,26 @@
 		
 	}
 
-
-	.eventsDate {
-		// background-image: url("../images/poster.png");
-		// 	background-size: 100% 100%;
-		@include borderBack;
-		@include catColor($dark, $dark);
+	div.eventTack{
+		margin-top: 60px;
 		@include bp($large){
 			width: 63%;
 			float: left;
 			margin-right: 3%;
 			margin-bottom: 60px;
-
+		
 		}
+	}
+	.eventsDate {
+		@include borderBack;
+		@include catColor($dark, $dark);
+		
+		
 		.typeTag {
 			background-color: $homeBack;
 			width: 30%;
 		}
-		margin-top: 60px;
+		
 		h2 {
 			margin: 0;
 			padding: 0px 15px 15px;
