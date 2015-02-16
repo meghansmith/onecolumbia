@@ -630,6 +630,9 @@ h2 > a {
   color: #666;
   text-decoration: none; }
 
+div.container {
+  clear: both; }
+
 .event, .event1, .eventS {
   margin-top: 70px;
   padding-top: 15px;
@@ -644,7 +647,9 @@ h2 > a {
   overflow: hidden; }
   @media (min-width: 600px) {
     .event, .event1, .eventS {
-      margin-left: 15px; } }
+      margin-left: 15px;
+      float: left;
+      width: 70%; } }
   .event img, .event1 img, .eventS img {
     width: 40%;
     float: left;
@@ -701,7 +706,6 @@ h2 > a {
 @media (min-width: 800px) {
   .eventS {
     width: 44%;
-    float: left;
     vertical-align: top;
     margin-right: 3%; } }
 
