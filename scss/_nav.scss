@@ -1,0 +1,120 @@
+
+a.menuButton {
+	cursor: pointer;
+	display: inline-block;
+	width: 100%;
+	font-size: 2em;
+	//border: 5px solid $dark;
+	padding: 5px 15px;
+	margin: 0px auto;
+	background-color: #fff;
+	
+	
+	@include bp(700px){
+		display: none !important;
+	}
+}
+.home nav.catNav {
+	background-color: #fff;
+	margin: auto;
+	ul {
+		background-color: #fff;
+		@include bp(700px){
+
+			display: block !important;
+			position: relative;
+			margin: 0;
+			
+		}
+	}
+	li{
+		@include bp(700px){
+			display: table;
+			width: 12.5%;
+			float: left;
+			height: 40px;
+			padding-top: 0;
+			padding-bottom: 0;
+			border-right: 1px solid #333;
+			&:last-child {
+				border-right: none;
+			}
+		}
+	}
+	a {
+		@include bp(700px){
+			display: table-cell;
+			font-size: 1em;
+			text-align: center;
+			vertical-align: middle;
+			padding-top: 15px;
+		}	
+	}
+}
+nav.catNav {
+	background-color: #fff;
+	
+	border: 15px;
+	border-image: url(../images/border.png) 20 repeat;
+	
+	@include bp ($med) {
+		margin-right: 25px;
+	}
+	ul {
+	padding: 0 15px;
+	margin-bottom: 50px;
+	
+
+	}
+	li {
+		padding-top: 10px;
+	}
+	li:last-child{
+		padding-bottom: 10px;
+	}
+	a {
+		color: $dark;
+		text-decoration: none;
+		font-size: 1.25em;
+		padding-top: 10px;
+		
+	}
+	a:hover {
+		@include bp($large){
+			
+				color: #888;
+			
+		}
+	}
+}
+.landing {
+	nav.catNav {
+		@include bp($med){
+			width: 25%;
+			float: left;
+		}
+		ul{
+			@include bp($med) {
+				display: block !important;
+				position: relative;
+				margin-bottom: 0;
+			}
+		}
+		li {
+			width: 100%;
+		}
+		a {
+				text-align: left;
+				font-size: 1.125em;
+		}
+	}
+	.liCat {
+		font-size: 1.45em;
+		padding-top: 30px;
+	}
+	a.menuButton{
+		@include bp($med){
+		display: none !important;
+	}
+	}
+}

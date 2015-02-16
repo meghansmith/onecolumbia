@@ -1,0 +1,96 @@
+.event {
+	margin-top: 70px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: relative;
+	border: 15px solid $dark;
+	// border: 15px;
+	// border-image: url(../images/border.png) 20 repeat;
+	background-color: #fff;
+	background-image: url("../images/circletrans2.png");
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	@include bp($med){
+		margin-left: 15px;
+	}
+	
+	img {
+	
+		width: 40%;
+		float: left;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+	.typeTag {
+		background-color: $homeBack;
+		margin-top: 20px;
+
+	}
+	p.date, p.date2 {
+		float: left;
+		width: 55px;
+		margin-right: 15px;
+		margin-left: 0;
+		padding-top: 0;
+		margin-top: 0;
+		
+	}
+	p.date2 {
+		width: 68px;
+		.date {
+			margin-left: 13px;
+		}
+
+	}
+	span.month {
+		color: $dark;
+		border-color: $dark;
+	}
+	span.date {
+		background-color: $dark;
+		border-color: $dark;
+		color: #fff;
+	}
+	.times {
+		font-size: .75em;
+		margin-right: 15px;
+		margin-top: 0;
+		text-shadow: 0 1px 22px #fff;
+	}
+	h2 {
+		clear: both;
+		font-size: 1.625em;
+		margin: 0 15px;
+	
+		clear: none;
+		margin-top: 37px;
+	}
+	.description {
+		font-size: .9em;
+		margin-top: 0;
+		margin-left: 15px;
+		margin-right: 15px;
+
+	}
+	a.button {
+		margin-right: 15px;
+		text-align: right;
+		
+
+	}
+}
+.event1 {
+	@extend .event;
+	margin-top: 20px;
+	
+}
+.eventS {
+	@extend .event;
+	@include bp(800px){
+		width: 44%;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 3%;
+	}
+}

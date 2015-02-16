@@ -1,0 +1,37 @@
+@mixin bp($point){
+	@media ('min-width:' + $point){
+		@content; //this takes all the content and dumps it
+	}
+}
+@mixin transition($property, $time, $method){
+	-webkit-transition: $property $time $method;
+	-moz-transition: $property $time $method;
+	-ms-transition: $property $time $method;
+	-o-transition: $property $time $method;
+	transition: $property $time $method;
+}
+@mixin catColor ($color, $lcolor){
+	h2 {
+		background-color: $color;
+		color: $homeBack;
+	}
+
+	span.month {
+		color: $lcolor;
+		border-color: $lcolor;
+	}
+	span.date {
+		color: #fff;
+		background-color: $lcolor;
+		border-color: $lcolor;
+	}
+	//border: 5px solid $color;
+}
+@mixin borderBack{
+		border: 15px solid #333;
+		background-image: url("../images/circletrans2.png");
+		background-size: cover;
+		background-position: center;
+		background-color: #fff;
+
+}

@@ -1,0 +1,48 @@
+footer {
+	border: 5px solid #fff;
+	padding: 0 15px;
+	margin-top: 60px;
+	clear: both;
+	ul {
+		padding: 0 0 40px;
+		width: 50%;
+		float: left;
+
+		@include bp($med){
+			width: 25%;
+		}
+	}
+	ul.connect {
+		width: 100%;
+	}
+	li {
+		color: #fff;
+		padding: 10px;
+		font-size: 1em;
+
+		span {
+			font-size: 3em;
+			display: inline;
+			float: left;
+			width: 40px;
+			margin-right: 20px;
+		}
+	}
+	li:first-child {
+		font-size: 1.25em;
+		font-weight: bold;
+	}
+	li.icon {
+		padding-top:0;
+		margin-top: -10px;
+		padding-bottom: 40px;
+	}
+	a {
+		color: #fff;
+	}
+	p {
+		clear: both;
+		font-size: .75em;
+		color: #fff;
+	}
+}

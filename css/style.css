@@ -1,0 +1,946 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-a02eup");
+  src: url("../fonts/icomoon.eot?#iefix-a02eup") format("embedded-opentype"), url("../fonts/icomoon.woff?-a02eup") format("woff"), url("../fonts/icomoon.ttf?-a02eup") format("truetype"), url("../fonts/icomoon.svg?-a02eup#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-arrow-left:before {
+  content: "\f060";
+  padding: 6px 6px 6px 8px;
+  background: url(../images/circle.png);
+  background-size: cover; }
+
+.home .icon-arrow-left:before {
+  content: "\f060";
+  padding: 6px 6px 6px 8px;
+  background: url(../images/circle.png);
+  background-size: cover; }
+
+.icon-arrow-right:before {
+  content: "\f061";
+  padding: 6px 6px 6px 8px;
+  background: url(../images/circle.png);
+  background-size: cover; }
+
+.home .icon-arrow-right:before {
+  content: "\f061";
+  padding: 6px 6px 6px 8px;
+  background: url(../images/circle.png);
+  background-size: cover; }
+
+.icon-arrow-down:before {
+  content: "\f063";
+  padding: 6px 6px 6px 8px;
+  background: url(../images/circle.png);
+  background-size: cover; }
+
+.home .icon-arrow-down:before {
+  content: "\f063";
+  padding: 6px 6px 6px 8px;
+  background: url(../images/circle.png);
+  background-size: cover; }
+
+.icon-search:before {
+  content: "\f02e"; }
+
+.icon-twitter-square:before {
+  content: "\f081"; }
+
+.icon-facebook-square:before {
+  content: "\f082"; }
+
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.5; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ff0000;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+p {
+  font-family: Verdana, sans-serif; }
+
+nav ul {
+  list-style: none; }
+
+header {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.landing header {
+  max-width: 1000px; }
+
+footer {
+  background-color: #333; }
+
+body {
+  background: url("../images/bricks4.png"); }
+
+body p {
+  color: #333; }
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  color: #333; }
+body a.button {
+  display: block; }
+
+a, h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, sans-serif; }
+
+.wrapper {
+  width: 96%;
+  margin: 0 auto;
+  max-width: 1000px; }
+
+.landing .wrapper {
+  max-width: 1000px; }
+
+.logoReplace a {
+  display: block;
+  width: 140px;
+  height: 140px;
+  background-size: contain;
+  background-image: url("../images/logodarkcircle.jpg");
+  background-color: #333;
+  text-indent: -9999px;
+  margin: 0 auto; }
+  @media (min-width: 675px) {
+    .logoReplace a {
+      width: 160px;
+      height: 160px; } }
+  @media (min-width: 900px) {
+    .logoReplace a {
+      width: 180px;
+      height: 180px; } }
+
+@media (min-width: 900px) {
+  a {
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
+
+  a:hover {
+    color: #888; } }
+a.button {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333; }
+
+@media (min-width: 900px) {
+  a.button {
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
+
+  a.button:hover {
+    color: #888; } }
+img {
+  max-width: 100%; }
+
+.typeTag {
+  display: inline-block;
+  margin: 0;
+  width: 22%;
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  left: 0px; }
+
+p.date, p.date2 {
+  display: inline-block; }
+
+span.month, span.date {
+  display: inline-block;
+  width: 55px;
+  padding: 2px -1px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  border: 1px solid #333; }
+
+.date2 span.date {
+  margin-left: 13px; }
+
+p.date2 {
+  float: left;
+  margin-top: 0;
+  margin-right: 15px; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+.hide {
+  display: none; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+       http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  /*a[href]:after {
+      content: " (" attr(href) ")";
+  }  this prints the href after each link on the page. */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group; }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+header {
+  position: relative;
+  padding-bottom: 40px; }
+  header .topNav {
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    right: 1%;
+    font-size: 0.65em; }
+    header .topNav li.icon {
+      text-align: right;
+      font-size: 1.75em; }
+    header .topNav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0 2px;
+      font-size: 1.5em; }
+  header .imageUnder {
+    background: url("../images/skyline.jpg") no-repeat;
+    background-size: cover;
+    border: 8px solid #fff; }
+  header p {
+    padding: 2% 15px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-shadow: 0 0px 8px #000; }
+    @media (min-width: 700px) {
+      header p {
+        font-size: 1.25em;
+        max-width: 600px; } }
+    header p .huge {
+      font-size: 2.25em; }
+      @media (min-width: 700px) {
+        header p .huge {
+          font-size: 3em; } }
+    header p .right {
+      display: block;
+      text-align: right; }
+  header p.textOver {
+    color: #fff; }
+  header .right {
+    text-align: center; }
+  header form {
+    padding-bottom: 10px; }
+  header input[type=text] {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    background: #dedede; }
+    @media (min-width: 700px) {
+      header input[type=text] {
+        font-size: 1.3em; } }
+  header button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 2px; }
+    @media (min-width: 700px) {
+      header button {
+        vertical-align: top;
+        font-size: 1em;
+        padding: 6px 15px; } }
+
+a.menuButton {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  font-size: 2em;
+  padding: 5px 15px;
+  margin: 0px auto;
+  background-color: #fff; }
+  @media (min-width: 700px) {
+    a.menuButton {
+      display: none !important; } }
+
+.home nav.catNav {
+  background-color: #fff;
+  margin: auto; }
+  .home nav.catNav ul {
+    background-color: #fff; }
+    @media (min-width: 700px) {
+      .home nav.catNav ul {
+        display: block !important;
+        position: relative;
+        margin: 0; } }
+  @media (min-width: 700px) {
+    .home nav.catNav li {
+      display: table;
+      width: 12.5%;
+      float: left;
+      height: 40px;
+      padding-top: 0;
+      padding-bottom: 0;
+      border-right: 1px solid #333; }
+      .home nav.catNav li:last-child {
+        border-right: none; } }
+  @media (min-width: 700px) {
+    .home nav.catNav a {
+      display: table-cell;
+      font-size: 1em;
+      text-align: center;
+      vertical-align: middle;
+      padding-top: 15px; } }
+
+nav.catNav {
+  background-color: #fff;
+  border: 15px;
+  border-image: url(../images/border.png) 20 repeat; }
+  @media (min-width: 600px) {
+    nav.catNav {
+      margin-right: 25px; } }
+  nav.catNav ul {
+    padding: 0 15px;
+    margin-bottom: 50px; }
+  nav.catNav li {
+    padding-top: 10px; }
+  nav.catNav li:last-child {
+    padding-bottom: 10px; }
+  nav.catNav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.25em;
+    padding-top: 10px; }
+  @media (min-width: 900px) {
+    nav.catNav a:hover {
+      color: #888; } }
+
+@media (min-width: 600px) {
+  .landing nav.catNav {
+    width: 25%;
+    float: left; } }
+@media (min-width: 600px) {
+  .landing nav.catNav ul {
+    display: block !important;
+    position: relative;
+    margin-bottom: 0; } }
+.landing nav.catNav li {
+  width: 100%; }
+.landing nav.catNav a {
+  text-align: left;
+  font-size: 1.125em; }
+.landing .liCat {
+  font-size: 1.45em;
+  padding-top: 30px; }
+@media (min-width: 600px) {
+  .landing a.menuButton {
+    display: none !important; } }
+
+.event, .event1, .eventS {
+  margin-top: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  border: 15px solid #333;
+  background-color: #fff;
+  background-image: url("../images/circletrans2.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; }
+  @media (min-width: 600px) {
+    .event, .event1, .eventS {
+      margin-left: 15px; } }
+  .event img, .event1 img, .eventS img {
+    width: 40%;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px; }
+  .event .typeTag, .event1 .typeTag, .eventS .typeTag {
+    background-color: #fff;
+    margin-top: 20px; }
+  .event p.date, .event1 p.date, .eventS p.date, .event p.date2, .event1 p.date2, .eventS p.date2 {
+    float: left;
+    width: 55px;
+    margin-right: 15px;
+    margin-left: 0;
+    padding-top: 0;
+    margin-top: 0; }
+  .event p.date2, .event1 p.date2, .eventS p.date2 {
+    width: 68px; }
+    .event p.date2 .date, .event1 p.date2 .date, .eventS p.date2 .date {
+      margin-left: 13px; }
+  .event span.month, .event1 span.month, .eventS span.month {
+    color: #333;
+    border-color: #333; }
+  .event span.date, .event1 span.date, .eventS span.date {
+    background-color: #333;
+    border-color: #333;
+    color: #fff; }
+  .event .times, .event1 .times, .eventS .times {
+    font-size: .75em;
+    margin-right: 15px;
+    margin-top: 0;
+    text-shadow: 0 1px 22px #fff; }
+  .event h2, .event1 h2, .eventS h2 {
+    clear: both;
+    font-size: 1.625em;
+    margin: 0 15px;
+    clear: none;
+    margin-top: 37px; }
+  .event .description, .event1 .description, .eventS .description {
+    font-size: .9em;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-right: 15px; }
+  .event a.button, .event1 a.button, .eventS a.button {
+    margin-right: 15px;
+    text-align: right; }
+
+.event1 {
+  margin-top: 20px; }
+
+@media (min-width: 800px) {
+  .eventS {
+    width: 44%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 3%; } }
+
+.home .featEvent {
+  margin-top: 20px;
+  position: relative;
+  clear: both;
+  border: 15px solid #333;
+  background-image: url("../images/circletrans2.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #fff; }
+  @media (min-width: 600px) {
+    .home .featEvent {
+      overflow: hidden; } }
+  @media (min-width: 600px) {
+    .home .featEvent img {
+      width: 50%;
+      float: left;
+      margin-right: 15px; } }
+  .home .featEvent .typeTag {
+    background-color: #fff; }
+  .home .featEvent p.date {
+    float: left;
+    width: 55px;
+    margin-left: 15px;
+    margin-right: 30px; }
+    @media (min-width: 600px) {
+      .home .featEvent p.date {
+        margin-left: 0; } }
+  .home .featEvent span.month {
+    color: #333;
+    border-color: #333; }
+  .home .featEvent span.date {
+    background-color: #333;
+    border-color: #333;
+    color: #fff; }
+  .home .featEvent .times {
+    font-size: .75em;
+    margin-right: 15px; }
+  .home .featEvent h2 {
+    clear: both;
+    font-size: 1.625em;
+    margin: 0 15px; }
+    @media (min-width: 600px) {
+      .home .featEvent h2 {
+        clear: none;
+        margin-top: 37px; } }
+  .home .featEvent .description {
+    font-size: .9em;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-right: 15px; }
+  .home .featEvent a.button {
+    margin-right: 15px;
+    text-align: right; }
+    @media (min-width: 600px) {
+      .home .featEvent a.button {
+        position: absolute;
+        bottom: 10px;
+        right: 0; } }
+.home .eventsDate {
+  border: 15px solid #333;
+  background-image: url("../images/circletrans2.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  margin-top: 60px; }
+  .home .eventsDate h2 {
+    background-color: #333;
+    color: #fff; }
+  .home .eventsDate span.month {
+    color: #333;
+    border-color: #333; }
+  .home .eventsDate span.date {
+    color: #fff;
+    background-color: #333;
+    border-color: #333; }
+  @media (min-width: 900px) {
+    .home .eventsDate {
+      width: 63%;
+      float: left;
+      margin-right: 3%;
+      margin-bottom: 60px; } }
+  .home .eventsDate .typeTag {
+    background-color: #fff;
+    width: 30%; }
+  .home .eventsDate h2 {
+    margin: 0;
+    padding: 0px 15px 15px;
+    font-size: 1.25em; }
+  .home .eventsDate > a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px 11px;
+    border: 5px solid #333;
+    background-color: #bbb;
+    border-right: none;
+    margin: 0 0 20px 0;
+    cursor: pointer; }
+    .home .eventsDate > a:nth-child(5) {
+      border-right: none; }
+    .home .eventsDate > a:nth-child(2) {
+      border-left: none; }
+    .home .eventsDate > a.active {
+      border-bottom: none;
+      background-color: #fff; }
+  .home .eventsDate .eventSmall {
+    margin: 20px 15px;
+    clear: both;
+    overflow: hidden;
+    position: relative; }
+    @media (min-width: 600px) {
+      .home .eventsDate .eventSmall {
+        width: 45%;
+        float: left;
+        margin-right: 1%;
+        clear: none; } }
+    @media (min-width: 600px) {
+      .home .eventsDate .eventSmall:nth-child(8) {
+        clear: left; } }
+    .home .eventsDate .eventSmall img {
+      width: 50%;
+      margin-right: 15px;
+      float: left;
+      padding-bottom: 0px; }
+    .home .eventsDate .eventSmall p.date {
+      margin: 0; }
+    .home .eventsDate .eventSmall h3 {
+      font-size: .9em;
+      font-weight: regular; }
+    .home .eventsDate .eventSmall a.button {
+      font-size: .9em;
+      display: inline-block;
+      width: 50%;
+      position: absolute;
+      bottom: 0px;
+      right: 0px; }
+  .home .eventsDate a:last-child {
+    border: none;
+    text-align: right;
+    width: 100%;
+    margin-top: 10px;
+    background-color: transparent; }
+.home .featCat {
+  border: 15px solid #333;
+  background-image: url("../images/circletrans2.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  margin-top: 60px;
+  overflow: hidden;
+  position: relative; }
+  .home .featCat h2 {
+    color: #fff;
+    margin: 0;
+    padding: 0px 15px 15px;
+    background-color: #333;
+    font-size: 1.25em; }
+  .home .featCat img {
+    max-width: 100%; }
+    @media screen and (min-width: 600px) and (max-width: 900px) {
+      .home .featCat img {
+        width: 48%;
+        float: left;
+        margin-right: 15px; } }
+  .home .featCat p {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: .9em; }
+    @media (min-width: 900px) {
+      .home .featCat p {
+        margin-bottom: 60px;
+        margin-right: 15px; } }
+  .home .featCat a {
+    display: block;
+    text-align: right;
+    margin-right: 15px;
+    padding-bottom: 10px; }
+    @media (min-width: 600px) {
+      .home .featCat a {
+        position: absolute;
+        bottom: 0;
+        right: 0; } }
+.home .eventText {
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 675px) {
+    .home .eventText {
+      width: 46%;
+      margin-right: 2%;
+      margin-top: 20px;
+      display: inline-block;
+      vertical-align: top; }
+      .home .eventText h3 {
+        margin-top: 0; } }
+  @media (min-width: 900px) {
+    .home .eventText {
+      width: 22%;
+      vertical-align: top; } }
+  .home .eventText p.date {
+    float: left;
+    width: 55px;
+    margin: 0 15px 0 0; }
+  @media (min-width: 900px) {
+    .home .eventText h3 {
+      clear: both;
+      padding: 15px 0px;
+      text-align: left; } }
+  .home .eventText p.description {
+    clear: both;
+    margin: 10px 0px 0;
+    padding-top: 10px;
+    font-size: .9em; }
+  .home .eventText a {
+    display: block;
+    text-align: right;
+    font-size: .9em;
+    margin-bottom: 30px; }
+    @media (min-width: 675px) {
+      .home .eventText a {
+        margin-top: 15px; } }
+.home .category1, .home .category2, .home .category3, .home .category4 {
+  border: 15px solid #333;
+  background-image: url("../images/circletrans2.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  margin-top: 60px;
+  overflow: hidden;
+  padding-bottom: 15px; }
+  @media (min-width: 900px) {
+    .home .category1, .home .category2, .home .category3, .home .category4 {
+      clear: both; } }
+  .home .category1 h2, .home .category2 h2, .home .category3 h2, .home .category4 h2 {
+    margin: 0;
+    padding: 0px 15px 15px; }
+  .home .category1 > a, .home .category2 > a, .home .category3 > a, .home .category4 > a {
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 15px;
+    clear: both; }
+.home .category1 h2 {
+  background-color: #333;
+  color: #fff; }
+.home .category1 span.month {
+  color: #333;
+  border-color: #333; }
+.home .category1 span.date {
+  color: #fff;
+  background-color: #333;
+  border-color: #333; }
+.home .category2 h2 {
+  background-color: #333;
+  color: #fff; }
+.home .category2 span.month {
+  color: #333;
+  border-color: #333; }
+.home .category2 span.date {
+  color: #fff;
+  background-color: #333;
+  border-color: #333; }
+.home .category3 h2 {
+  background-color: #333;
+  color: #fff; }
+.home .category3 span.month {
+  color: #333;
+  border-color: #333; }
+.home .category3 span.date {
+  color: #fff;
+  background-color: #333;
+  border-color: #333; }
+.home .category4 h2 {
+  background-color: #333;
+  color: #fff; }
+.home .category4 span.month {
+  color: #333;
+  border-color: #333; }
+.home .category4 span.date {
+  color: #fff;
+  background-color: #333;
+  border-color: #333; }
+
+footer {
+  border: 5px solid #fff;
+  padding: 0 15px;
+  margin-top: 60px;
+  clear: both; }
+  footer ul {
+    padding: 0 0 40px;
+    width: 50%;
+    float: left; }
+    @media (min-width: 600px) {
+      footer ul {
+        width: 25%; } }
+  footer ul.connect {
+    width: 100%; }
+  footer li {
+    color: #fff;
+    padding: 10px;
+    font-size: 1em; }
+    footer li span {
+      font-size: 3em;
+      display: inline;
+      float: left;
+      width: 40px;
+      margin-right: 20px; }
+  footer li:first-child {
+    font-size: 1.25em;
+    font-weight: bold; }
+  footer li.icon {
+    padding-top: 0;
+    margin-top: -10px;
+    padding-bottom: 40px; }
+  footer a {
+    color: #fff; }
+  footer p {
+    clear: both;
+    font-size: .75em;
+    color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
