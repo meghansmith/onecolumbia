@@ -153,7 +153,7 @@ footer {
   background-color: #333; }
 
 body {
-  background: url("../images/bricks2.png"); }
+  background: url("../images/wood3.png"); }
 
 body p {
   color: #333; }
@@ -552,7 +552,28 @@ a.menuButton {
 
 .home nav.catNav {
   background-color: #fff;
-  margin: auto; }
+  margin: auto;
+  position: relative; }
+  @media (min-width: 700px) {
+    .home nav.catNav {
+      height: 81px; } }
+  .home nav.catNav:before, .home nav.catNav:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #888;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #666;
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
+    z-index: 5; }
+  .home nav.catNav:before {
+    left: -15px;
+    top: -15px; }
+  .home nav.catNav:after {
+    top: -15px;
+    right: -15px; }
   .home nav.catNav ul {
     background-color: #fff; }
     @media (min-width: 700px) {

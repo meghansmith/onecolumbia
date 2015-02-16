@@ -16,6 +16,31 @@ a.menuButton {
 .home nav.catNav {
 	background-color: #fff;
 	margin: auto;
+	position: relative;
+	@include bp(700px){
+		height: 81px;
+	}
+	&:before, &:after {
+	    content: "";
+	    position: absolute;
+	    display: block;
+	    background-color: #888;
+	    height: 10px;
+	    width: 10px;
+	    border: 1px solid #666;
+	    box-shadow: 0 2px 3px 0px rgba(0,0,0, .75);
+	    border-radius: 50%;
+	    z-index: 5;
+	}
+	&:before{
+		left: -15px;
+		top: -15px;
+	}
+	&:after{
+		top: -15px;
+		right:-15px;
+	}
+		
 	ul {
 		background-color: #fff;
 		@include bp(700px){
