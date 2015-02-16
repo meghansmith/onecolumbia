@@ -92,12 +92,23 @@ h2>a {
 	@extend .event;
 	@include bp(800px){
 		width: 44%;
-		display: inline-block;
+		float: left;
 		vertical-align: top;
 		margin-right: 3%;
 	}
 }
+.detail .tape{
+	margin-top: 40px;
+
+	@include bp($med){
+			width: 70%;
+			display: inline-block;
+			margin-top: 0;
+				}
+}
+
 main.eventDetail {
+	
 	div.img {
 		float: left;
 		width: 45%;
@@ -111,8 +122,7 @@ main.eventDetail {
 		padding: 15px;
 		position: relative;
 		@include bp($med){
-			width: 70%;
-			display: inline-block;
+
 			margin-top: 0;
 		}
 		.credit {

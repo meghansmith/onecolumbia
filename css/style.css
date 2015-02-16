@@ -153,7 +153,7 @@ footer {
   background-color: #333; }
 
 body {
-  background: url("../images/bricks.png"); }
+  background: url("../images/bricks2.png"); }
 
 body p {
   color: #333; }
@@ -170,16 +170,12 @@ a, h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   max-width: 1000px; }
 
-.landing .wrapper {
-  max-width: 1000px; }
-
 .logoReplace a {
   display: block;
   width: 140px;
   height: 140px;
   background-size: contain;
-  background-image: url("../images/logodarkcircle.jpg");
-  background-color: #333;
+  background-image: url("../images/onecolumbialogo.png");
   text-indent: -9999px;
   margin: 0 auto; }
   @media (min-width: 675px) {
@@ -250,6 +246,57 @@ p.date2 {
   float: left;
   margin-top: 0;
   margin-right: 15px; }
+
+.tape {
+  position: relative; }
+
+.tape:before, .tape:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgba(222, 210, 174, 0.85);
+  height: 20px; }
+
+.tape:before {
+  left: -20px;
+  top: -10px;
+  width: 60px;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  z-index: 3; }
+
+.tape:after {
+  right: -15px;
+  top: -10px;
+  width: 70px;
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  -ms-transform: rotate(25deg); }
+
+.tacks {
+  position: relative; }
+
+.tacks:before, .tacks:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #888;
+  height: 10px;
+  width: 10px;
+  border: 1px solid #666;
+  box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+  top: -3px;
+  z-index: 5; }
+
+.tacks:before {
+  left: -3px; }
+
+.tacks:after {
+  right: -3px; }
 
 /* ==========================================================================
    Helper classes
@@ -390,17 +437,25 @@ p.date2 {
   h3 {
     page-break-after: avoid; } }
 .landing header, .detail header {
-  max-width: 1000px;
-  padding-bottom: 20px; }
+  padding: 0 10% 40px;
+  max-width: 560px; }
+  .landing header .topNav, .detail header .topNav {
+    right: 10%; }
+  .landing header form, .detail header form {
+    padding-top: 10px; }
+  .landing header .imageUnder, .detail header .imageUnder {
+    background-position: bottom;
+    border: 2px solid #fff;
+    margin-bottom: 15px;
+    width: 100%; }
 
 header {
   position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   padding-bottom: 40px;
-  max-width: 1100px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background-color: #333;
+  box-shadow: 0 5px 16px -3px rgba(0, 0, 0, 0.75); }
   header .topNav {
     list-style: none;
     position: absolute;
@@ -418,7 +473,9 @@ header {
   header .imageUnder {
     background: url("../images/skyline.jpg") no-repeat;
     background-size: cover;
-    border: 8px solid #fff; }
+    border: 8px solid #fff;
+    width: 94%;
+    margin: 0 auto; }
   header p {
     padding: 2% 15px;
     font-family: Arial, sans-serif;
@@ -471,10 +528,10 @@ header {
     background-size: cover;
     background-position: center;
     background-color: #fff;
-    width: 100%;
-    padding-left: 15px;
-    max-width: 500px;
-    margin-bottom: 0;
+    box-shadow: 0 5px 16px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: none;
+    border: none;
+    margin: 0 auto;
     text-align: center; }
 
 a.menuButton {
@@ -520,6 +577,7 @@ a.menuButton {
 
 nav.catNav {
   background-color: #fff;
+  box-shadow: 0 5px 16px -3px rgba(0, 0, 0, 0.75);
   border: 15px;
   border-image: url(../images/border.png) 20 repeat; }
   @media (min-width: 600px) {
@@ -564,6 +622,10 @@ nav.catNav {
   .landing a.menuButton, .detail a.menuButton {
     display: none !important; } }
 
+@media (min-width: 600px) {
+  .detail nav.catNav {
+    display: inline-block; } }
+
 h2 > a {
   color: #666;
   text-decoration: none; }
@@ -578,6 +640,7 @@ h2 > a {
   background-size: cover;
   background-position: center;
   background-color: #fff;
+  box-shadow: 0 5px 16px -3px rgba(0, 0, 0, 0.75);
   overflow: hidden; }
   @media (min-width: 600px) {
     .event, .event1, .eventS {
@@ -638,9 +701,17 @@ h2 > a {
 @media (min-width: 800px) {
   .eventS {
     width: 44%;
-    display: inline-block;
+    float: left;
     vertical-align: top;
     margin-right: 3%; } }
+
+.detail .tape {
+  margin-top: 40px; }
+  @media (min-width: 600px) {
+    .detail .tape {
+      width: 70%;
+      display: inline-block;
+      margin-top: 0; } }
 
 main.eventDetail div.img {
   float: left;
@@ -652,13 +723,12 @@ main.eventDetail .primary {
   background-size: cover;
   background-position: center;
   background-color: #fff;
+  box-shadow: 0 5px 16px -3px rgba(0, 0, 0, 0.75);
   margin-top: 20px;
   padding: 15px;
   position: relative; }
   @media (min-width: 600px) {
     main.eventDetail .primary {
-      width: 70%;
-      display: inline-block;
       margin-top: 0; } }
   main.eventDetail .primary .credit {
     font-size: .7em; }
@@ -710,14 +780,15 @@ main.eventDetail p {
 .home h2 > a {
   color: #fff; }
 .home .featEvent {
-  margin-top: 20px;
+  margin-top: 30px;
   position: relative;
   clear: both;
   border: 15px solid #333;
   background-image: url("../images/circletrans2.png");
   background-size: cover;
   background-position: center;
-  background-color: #fff; }
+  background-color: #fff;
+  box-shadow: 0 5px 16px -3px rgba(0, 0, 0, 0.75); }
   @media (min-width: 600px) {
     .home .featEvent {
       overflow: hidden; } }
@@ -773,6 +844,7 @@ main.eventDetail p {
   background-size: cover;
   background-position: center;
   background-color: #fff;
+  box-shadow: 0 5px 16px -3px rgba(0, 0, 0, 0.75);
   margin-top: 60px; }
   .home .eventsDate h2 {
     background-color: #333;
@@ -859,6 +931,7 @@ main.eventDetail p {
   background-size: cover;
   background-position: center;
   background-color: #fff;
+  box-shadow: 0 5px 16px -3px rgba(0, 0, 0, 0.75);
   margin-top: 60px;
   overflow: hidden;
   position: relative; }
@@ -941,6 +1014,7 @@ main.eventDetail p {
   background-size: cover;
   background-position: center;
   background-color: #fff;
+  box-shadow: 0 5px 16px -3px rgba(0, 0, 0, 0.75);
   margin-top: 60px;
   overflow: hidden;
   padding-bottom: 15px; }
@@ -1000,7 +1074,8 @@ footer {
   border: 5px solid #fff;
   padding: 0 15px;
   margin-top: 60px;
-  clear: both; }
+  clear: both;
+  box-shadow: 0 5px 16px -3px rgba(0, 0, 0, 0.75); }
   footer ul {
     padding: 0 0 40px;
     width: 50%;

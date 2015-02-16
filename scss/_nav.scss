@@ -52,7 +52,7 @@ a.menuButton {
 }
 nav.catNav {
 	background-color: #fff;
-	
+	box-shadow: 0 5px 16px -3px rgba(0,0,0, .75);
 	border: 15px;
 	border-image: url(../images/border.png) 20 repeat;
 	
@@ -87,6 +87,8 @@ nav.catNav {
 		}
 	}
 }
+
+
 .landing, .detail {
 	nav.catNav {
 		@include bp($med){
@@ -116,5 +118,10 @@ nav.catNav {
 		@include bp($med){
 		display: none !important;
 	}
+	}
+}
+.detail nav.catNav {
+	@include bp($med){
+		display: inline-block;
 	}
 }

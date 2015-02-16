@@ -108,12 +108,9 @@ footer {
     background-color: #333;
 }
 body {
-    background: url("../images/bricks.png");
+    background: url("../images/bricks2.png");
 }
 body {
-
-    
-
     p {
         color: $homeCont;
     }
@@ -134,16 +131,12 @@ a, h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     max-width: 1000px;
 }
-.landing .wrapper {
-    max-width: 1000px;
-}
 .logoReplace a {
     display: block;
     width: 140px;
     height: 140px;
     background-size: contain;
-    background-image: url("../images/logodarkcircle.jpg");
-    background-color: #333;
+    background-image: url("../images/onecolumbialogo.png");
     text-indent: -9999px;
     margin: 0 auto;
     @include bp($med2){
@@ -220,8 +213,63 @@ p.date2 {
 
 
 
+.tape {
+    position: relative;
 
+}
+.tape:before, .tape:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgba(222, 210, 174, .85);
+    height: 20px;
+   
+}
 
+.tape:before {
+    left: -20px;
+    top: -10px;
+    width: 60px;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    z-index: 3;
+
+}
+.tape:after {
+    right: -15px;
+    top: -10px;
+    width: 70px;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+}
+
+.tacks {
+    position: relative;
+}
+.tacks:before, .tacks:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #888;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #666;
+    box-shadow: 0 2px 3px 0px rgba(0,0,0, .75);
+    border-radius: 50%;
+    top: -3px;
+    z-index: 5;
+}
+
+.tacks:before {
+    left: -3px;
+}
+.tacks:after {
+    right: -3px;
+}
 
 
 
