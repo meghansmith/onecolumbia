@@ -1,4 +1,7 @@
 .home {
+	h2>a{
+		color: #fff;
+	}
 	.featEvent {
 		margin-top: 20px;
 		position: relative;
@@ -241,7 +244,8 @@
 		@include bp($large){
 			h3 {
 				clear: both;
-				padding: 15px 0px;
+				padding: 15px 0px 0;
+				margin-bottom: 0;
 				text-align: left;
 			}
 		}
@@ -250,6 +254,9 @@
 			margin: 10px 0px 0;
 			padding-top: 10px;
 			font-size: .9em;
+			@include bp($large){
+				margin-top: 0;
+			}
 		}
 		a {
 			display: block;

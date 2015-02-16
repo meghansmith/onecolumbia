@@ -156,8 +156,10 @@ header {
   max-width: 1100px;
   margin: 0 auto; }
 
-.landing header {
-  max-width: 1000px; }
+.landing header, .detail header {
+  max-width: 1000px;
+  padding-left: 15px;
+  padding-right: 15px; }
 
 footer {
   background-color: #333; }
@@ -203,18 +205,18 @@ a, h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 900px) {
   a {
-    -webkit-transition: color 0.3s ease;
-    -moz-transition: color 0.3s ease;
-    -ms-transition: color 0.3s ease;
-    -o-transition: color 0.3s ease;
-    transition: color 0.3s ease; }
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease; }
 
   a:hover {
     color: #888; } }
 a.button {
   font-weight: bold;
   text-decoration: none;
-  color: #333; }
+  color: #666; }
 
 @media (min-width: 900px) {
   a.button {
@@ -399,9 +401,18 @@ p.date2 {
   h2,
   h3 {
     page-break-after: avoid; } }
+.landing header, .detail header {
+  max-width: 1000px;
+  padding-bottom: 20px; }
+
 header {
   position: relative;
-  padding-bottom: 40px; }
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 40px;
+  max-width: 1100px;
+  margin: 0 auto; }
   header .topNav {
     list-style: none;
     position: absolute;
@@ -466,6 +477,17 @@ header {
         vertical-align: top;
         font-size: 1em;
         padding: 6px 15px; } }
+  header h2 {
+    border: 15px solid #333;
+    background-image: url("../images/circletrans2.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+    width: 100%;
+    padding-left: 15px;
+    max-width: 500px;
+    margin-bottom: 0;
+    text-align: center; }
 
 a.menuButton {
   cursor: pointer;
@@ -523,34 +545,40 @@ nav.catNav {
   nav.catNav li:last-child {
     padding-bottom: 10px; }
   nav.catNav a {
-    color: #333;
+    color: #666;
     text-decoration: none;
     font-size: 1.25em;
-    padding-top: 10px; }
+    padding-top: 10px;
+    transition: color 0.5s, text-decoration 0.5s; }
   @media (min-width: 900px) {
     nav.catNav a:hover {
-      color: #888; } }
+      color: #888;
+      text-decoration: underline; } }
 
 @media (min-width: 600px) {
-  .landing nav.catNav {
+  .landing nav.catNav, .detail nav.catNav {
     width: 25%;
     float: left; } }
 @media (min-width: 600px) {
-  .landing nav.catNav ul {
+  .landing nav.catNav ul, .detail nav.catNav ul {
     display: block !important;
     position: relative;
     margin-bottom: 0; } }
-.landing nav.catNav li {
+.landing nav.catNav li, .detail nav.catNav li {
   width: 100%; }
-.landing nav.catNav a {
-  text-align: left;
+.landing nav.catNav a, .detail nav.catNav a {
+  text-align: center;
   font-size: 1.125em; }
-.landing .liCat {
+.landing .liCat, .detail .liCat {
   font-size: 1.45em;
   padding-top: 30px; }
 @media (min-width: 600px) {
-  .landing a.menuButton {
+  .landing a.menuButton, .detail a.menuButton {
     display: none !important; } }
+
+h2 > a {
+  color: #666;
+  text-decoration: none; }
 
 .event, .event1, .eventS {
   margin-top: 70px;
@@ -558,10 +586,10 @@ nav.catNav {
   padding-bottom: 15px;
   position: relative;
   border: 15px solid #333;
-  background-color: #fff;
   background-image: url("../images/circletrans2.png");
   background-size: cover;
   background-position: center;
+  background-color: #fff;
   overflow: hidden; }
   @media (min-width: 600px) {
     .event, .event1, .eventS {
@@ -580,11 +608,12 @@ nav.catNav {
     margin-right: 15px;
     margin-left: 0;
     padding-top: 0;
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 0; }
   .event p.date2, .event1 p.date2, .eventS p.date2 {
     width: 68px; }
     .event p.date2 .date, .event1 p.date2 .date, .eventS p.date2 .date {
-      margin-left: 13px; }
+      margin-left: 12px; }
   .event span.month, .event1 span.month, .eventS span.month {
     color: #333;
     border-color: #333; }
@@ -593,16 +622,16 @@ nav.catNav {
     border-color: #333;
     color: #fff; }
   .event .times, .event1 .times, .eventS .times {
-    font-size: .75em;
+    font-size: .7em;
     margin-right: 15px;
     margin-top: 0;
     text-shadow: 0 1px 22px #fff; }
   .event h2, .event1 h2, .eventS h2 {
-    clear: both;
-    font-size: 1.625em;
-    margin: 0 15px;
-    clear: none;
-    margin-top: 37px; }
+    font-size: 1.25em;
+    margin: 40px 15px 0; }
+    .event h2 a, .event1 h2 a, .eventS h2 a {
+      margin-top: 0;
+      padding-top: 10px; }
   .event .description, .event1 .description, .eventS .description {
     font-size: .9em;
     margin-top: 0;
@@ -614,6 +643,9 @@ nav.catNav {
 
 .event1 {
   margin-top: 20px; }
+  @media (min-width: 600px) {
+    .event1 {
+      margin-top: 0; } }
 
 @media (min-width: 800px) {
   .eventS {
@@ -622,6 +654,73 @@ nav.catNav {
     vertical-align: top;
     margin-right: 3%; } }
 
+main.eventDetail div.img {
+  float: left;
+  width: 45%;
+  margin-right: 15px; }
+main.eventDetail .primary {
+  border: 15px solid #333;
+  background-image: url("../images/circletrans2.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 15px;
+  position: relative; }
+  @media (min-width: 600px) {
+    main.eventDetail .primary {
+      width: 70%;
+      display: inline-block;
+      margin-top: 0; } }
+  main.eventDetail .primary .credit {
+    font-size: .7em; }
+main.eventDetail p.date {
+  margin: 0 15px 0 0px;
+  padding-right: 0; }
+  main.eventDetail p.date .date {
+    color: #fff;
+    background-color: #333; }
+main.eventDetail .times {
+  display: inline-block;
+  width: 25%;
+  margin: 0;
+  padding: 0; }
+main.eventDetail h2 {
+  margin-top: 15px; }
+main.eventDetail a {
+  color: #666; }
+  main.eventDetail a:hover {
+    color: #888; }
+main.eventDetail a.tickets {
+  display: inline-block;
+  border: 2px solid #333;
+  color: #333;
+  padding: 5px 15px;
+  transition: color 0.5s, background-color 0.5s; }
+  @media (min-width: 900px) {
+    main.eventDetail a.tickets:hover {
+      color: #fff;
+      background-color: #333; } }
+main.eventDetail .description {
+  margin-top: 15px; }
+  @media (min-width: 900px) {
+    main.eventDetail .description {
+      float: right;
+      width: 50%;
+      margin-left: 15px; } }
+main.eventDetail h3, main.eventDetail h4 {
+  padding-bottom: 0;
+  margin-bottom: 0; }
+main.eventDetail p {
+  padding-top: 10px;
+  margin-top: 0; }
+@media (min-width: 900px) {
+  main.eventDetail .additional {
+    float: left;
+    width: 45%; } }
+
+.home h2 > a {
+  color: #fff; }
 .home .featEvent {
   margin-top: 20px;
   position: relative;
@@ -829,13 +928,17 @@ nav.catNav {
   @media (min-width: 900px) {
     .home .eventText h3 {
       clear: both;
-      padding: 15px 0px;
+      padding: 15px 0px 0;
+      margin-bottom: 0;
       text-align: left; } }
   .home .eventText p.description {
     clear: both;
     margin: 10px 0px 0;
     padding-top: 10px;
     font-size: .9em; }
+    @media (min-width: 900px) {
+      .home .eventText p.description {
+        margin-top: 0; } }
   .home .eventText a {
     display: block;
     text-align: right;

@@ -1,15 +1,13 @@
+h2>a {
+	color: #666;
+	text-decoration: none;
+}
 .event {
 	margin-top: 70px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	position: relative;
-	border: 15px solid $dark;
-	// border: 15px;
-	// border-image: url(../images/border.png) 20 repeat;
-	background-color: #fff;
-	background-image: url("../images/circletrans2.png");
-	background-size: cover;
-	background-position: center;
+	@include borderBack;
 	overflow: hidden;
 	@include bp($med){
 		margin-left: 15px;
@@ -34,12 +32,13 @@
 		margin-left: 0;
 		padding-top: 0;
 		margin-top: 0;
+		margin-bottom: 0;
 		
 	}
 	p.date2 {
 		width: 68px;
 		.date {
-			margin-left: 13px;
+			margin-left: 12px;
 		}
 
 	}
@@ -53,18 +52,19 @@
 		color: #fff;
 	}
 	.times {
-		font-size: .75em;
+		font-size: .7em;
 		margin-right: 15px;
 		margin-top: 0;
 		text-shadow: 0 1px 22px #fff;
 	}
 	h2 {
-		clear: both;
-		font-size: 1.625em;
-		margin: 0 15px;
-	
-		clear: none;
-		margin-top: 37px;
+		font-size: 1.25em;
+		margin: 40px 15px 0;
+		
+		a{
+			margin-top: 0;
+			padding-top: 10px;
+		}
 	}
 	.description {
 		font-size: .9em;
@@ -83,6 +83,9 @@
 .event1 {
 	@extend .event;
 	margin-top: 20px;
+	@include bp($med){
+		margin-top: 0;
+	}
 	
 }
 .eventS {
@@ -92,5 +95,89 @@
 		display: inline-block;
 		vertical-align: top;
 		margin-right: 3%;
+	}
+}
+main.eventDetail {
+	div.img {
+		float: left;
+		width: 45%;
+		margin-right: 15px;
+
+	}
+
+	.primary{
+		@include borderBack;
+		margin-top: 20px;
+		padding: 15px;
+		position: relative;
+		@include bp($med){
+			width: 70%;
+			display: inline-block;
+			margin-top: 0;
+		}
+		.credit {
+			font-size: .7em;
+		}
+	}
+	p.date {
+		margin: 0 15px 0 0px;
+		padding-right: 0;
+		.date {
+			color: #fff;
+			background-color: #333;
+		}
+	}
+	.times {
+		display: inline-block;
+		width: 25%;
+		margin: 0;
+		padding: 0;
+	}
+	h2 {
+		margin-top: 15px;
+	}
+	a {
+		color: #666;
+		&:hover {
+			color:#888;
+		}
+	}
+	a.tickets {
+		display: inline-block;
+		border: 2px solid #333;
+		color: #333;
+		padding: 5px 15px;
+		transition: color 0.5s, background-color 0.5s;
+		
+		&:hover {
+			@include bp($large){
+				color: #fff;
+				background-color: #333;
+			}
+		}
+	}
+	.description {
+		
+		margin-top: 15px;
+		@include bp($large){
+			float: right;
+			width: 50%;
+			margin-left: 15px;
+		}
+	}
+
+	h3, h4 {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	p{
+		padding-top: 10px;
+		margin-top: 0;
+	}
+	.additional {
+		@include bp($large){
+			float: left;
+			width: 45%;
+		}
 	}
 }

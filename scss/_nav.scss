@@ -4,7 +4,6 @@ a.menuButton {
 	display: inline-block;
 	width: 100%;
 	font-size: 2em;
-	//border: 5px solid $dark;
 	padding: 5px 15px;
 	margin: 0px auto;
 	background-color: #fff;
@@ -73,21 +72,22 @@ nav.catNav {
 		padding-bottom: 10px;
 	}
 	a {
-		color: $dark;
+		color: #666;
 		text-decoration: none;
 		font-size: 1.25em;
 		padding-top: 10px;
-		
+		transition: color 0.5s, text-decoration 0.5s;
 	}
 	a:hover {
 		@include bp($large){
 			
 				color: #888;
+				text-decoration: underline;
 			
 		}
 	}
 }
-.landing {
+.landing, .detail {
 	nav.catNav {
 		@include bp($med){
 			width: 25%;
@@ -104,7 +104,7 @@ nav.catNav {
 			width: 100%;
 		}
 		a {
-				text-align: left;
+				text-align: center;
 				font-size: 1.125em;
 		}
 	}
