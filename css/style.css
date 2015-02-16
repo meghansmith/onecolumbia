@@ -149,23 +149,11 @@ p {
 nav ul {
   list-style: none; }
 
-header {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  max-width: 1100px;
-  margin: 0 auto; }
-
-.landing header, .detail header {
-  max-width: 1000px;
-  padding-left: 15px;
-  padding-right: 15px; }
-
 footer {
   background-color: #333; }
 
 body {
-  background: url("../images/bricks4.png"); }
+  background: url("../images/bricks.png"); }
 
 body p {
   color: #333; }
