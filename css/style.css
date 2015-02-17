@@ -444,7 +444,7 @@ p.date2 {
   .landing header .tacks:after, .detail header .tacks:after {
     right: -15%; }
   .landing header .topNav, .detail header .topNav {
-    right: 10%; }
+    right: 0; }
   .landing header form, .detail header form {
     padding-top: 10px; }
   .landing header .imageUnder, .detail header .imageUnder {
@@ -510,7 +510,10 @@ header {
     font-family: Arial, sans-serif;
     font-size: 1em;
     text-align: center;
-    background: #dedede; }
+    background-image: url(../images/circletrans2.png);
+    background-position: center;
+    background-size: cover;
+    background-color: #dedede; }
     @media (min-width: 700px) {
       header input[type=text] {
         font-size: 1.3em; } }
@@ -520,7 +523,10 @@ header {
     padding: 4px 10px;
     border-radius: 4px;
     border: none;
-    margin-bottom: 2px; }
+    margin-bottom: 2px;
+    background-image: url(../images/circletrans2.png);
+    background-position: center;
+    background-size: cover; }
     @media (min-width: 700px) {
       header button {
         vertical-align: top;
@@ -666,7 +672,7 @@ div.container {
   clear: both; }
 
 .event, .event1, .eventS {
-  margin-top: 70px;
+  margin-top: 45px;
   padding-top: 15px;
   padding-bottom: 15px;
   position: relative;
@@ -710,16 +716,23 @@ div.container {
     border-color: #333;
     color: #fff; }
   .event .times, .event1 .times, .eventS .times {
-    font-size: .7em;
+    font-size: 1em;
     margin-right: 15px;
-    margin-top: 0;
-    text-shadow: 0 1px 22px #fff; }
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-shadow: 0 1px 22px #fff;
+    width: 40%;
+    display: inline-block; }
   .event h2, .event1 h2, .eventS h2 {
     font-size: 1.25em;
-    margin: 40px 15px 0; }
+    margin: 0px 15px;
+    clear: both;
+    padding-top: 15px; }
+    @media (min-width: 675px) {
+      .event h2, .event1 h2, .eventS h2 {
+        clear: none; } }
     .event h2 a, .event1 h2 a, .eventS h2 a {
-      margin-top: 0;
-      padding-top: 10px; }
+      margin-top: 0; }
   .event .description, .event1 .description, .eventS .description {
     font-size: .9em;
     margin-top: 0;
@@ -735,6 +748,19 @@ div.container {
     .event1 {
       margin-top: 0; } }
 
+@media (min-width: 600px) {
+  .eventS {
+    width: 96%; } }
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .eventS h2 {
+    clear: none; } }
+@media (min-width: 800px) {
+  .eventS h2 {
+    clear: both; } }
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .eventS .description {
+    clear: both;
+    padding-top: 15px; } }
 @media (min-width: 800px) {
   .eventS {
     width: 44%;
