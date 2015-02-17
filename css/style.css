@@ -875,7 +875,9 @@ main.eventDetail p {
         bottom: 10px;
         right: 0; } }
 .home div.eventTack {
-  margin-top: 60px; }
+  margin: auto;
+  margin-top: 60px;
+  max-width: 750px; }
   @media (min-width: 900px) {
     .home div.eventTack {
       width: 63%;
@@ -935,7 +937,8 @@ main.eventDetail p {
         width: 45%;
         float: left;
         margin-right: 1%;
-        clear: none; } }
+        clear: none;
+        padding-left: 119px; } }
     @media (min-width: 600px) {
       .home .eventsDate .eventSmall:nth-child(8) {
         clear: left; } }
@@ -944,11 +947,18 @@ main.eventDetail p {
       margin-right: 15px;
       float: left;
       padding-bottom: 0px; }
+      @media (min-width: 600px) {
+        .home .eventsDate .eventSmall img {
+          width: 119px;
+          margin-left: -134px;
+          margin-right: 0; } }
     .home .eventsDate .eventSmall p.date {
       margin: 0; }
     .home .eventsDate .eventSmall h3 {
       font-size: .9em;
-      font-weight: regular; }
+      font-weight: regular;
+      margin-bottom: 0;
+      padding-bottom: 30px; }
     .home .eventsDate .eventSmall a.button {
       font-size: .9em;
       display: inline-block;
@@ -1006,37 +1016,48 @@ main.eventDetail p {
 .home .eventText {
   padding-left: 15px;
   padding-right: 15px; }
+  .home .eventText h3 {
+    display: inline-block;
+    width: 65%;
+    margin-top: 15px;
+    vertical-align: top;
+    margin-bottom: 0;
+    padding-bottom: 0; }
   @media (min-width: 675px) {
     .home .eventText {
       width: 46%;
       margin-right: 2%;
       margin-top: 20px;
       display: inline-block;
-      vertical-align: top; }
-      .home .eventText h3 {
-        margin-top: 0; } }
-  @media (min-width: 900px) {
+      vertical-align: top; } }
+  @media (min-width: 915px) {
     .home .eventText {
       width: 22%;
       vertical-align: top; } }
-  .home .eventText p.date {
-    float: left;
-    width: 55px;
-    margin: 0 15px 0 0; }
+  .home .eventText p.date, .home .eventText p.date2 {
+    display: inline-block;
+    width: 30%;
+    max-width: 55px;
+    margin: 15px 15px 0px 0;
+    padding-bottom: 0; }
+  .home .eventText p.date2 {
+    max-width: 69px;
+    float: none; }
+    @media (min-width: 915px) {
+      .home .eventText p.date2 {
+        width: 38%; } }
+  .home .eventText .twoDates {
+    width: 100%; }
   @media (min-width: 900px) {
     .home .eventText h3 {
-      clear: both;
-      padding: 15px 0px 0;
+      width: 100%;
       margin-bottom: 0;
       text-align: left; } }
   .home .eventText p.description {
     clear: both;
-    margin: 10px 0px 0;
-    padding-top: 10px;
+    margin: 15px 0px 0;
+    padding-top: 0px;
     font-size: .9em; }
-    @media (min-width: 900px) {
-      .home .eventText p.description {
-        margin-top: 0; } }
   .home .eventText a {
     display: block;
     text-align: right;
@@ -1121,11 +1142,16 @@ footer {
       footer ul {
         width: 25%; } }
   footer ul.connect {
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 0; }
   footer li {
     color: #fff;
     padding: 10px;
     font-size: 1em; }
+    @media (min-width: 675px) {
+      footer li {
+        padding: 2px;
+        font-size: .9em; } }
     footer li span {
       font-size: 3em;
       display: inline;
@@ -1145,5 +1171,10 @@ footer {
     clear: both;
     font-size: .75em;
     color: #fff; }
+  @media (min-width: 675px) {
+    footer p.address {
+      position: absolute;
+      top: 15px;
+      right: 15px; } }
 
 /*# sourceMappingURL=style.css.map */

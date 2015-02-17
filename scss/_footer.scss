@@ -15,11 +15,16 @@ footer {
 	}
 	ul.connect {
 		width: 100%;
+		padding-bottom: 0;
 	}
 	li {
 		color: #fff;
 		padding: 10px;
 		font-size: 1em;
+		@include bp($med2){
+			padding: 2px;
+			font-size: .9em;
+		}
 
 		span {
 			font-size: 3em;
@@ -45,5 +50,12 @@ footer {
 		clear: both;
 		font-size: .75em;
 		color: #fff;
+	}
+	p.address {
+		@include bp($med2){
+			position: absolute;
+			top: 15px;
+			right: 15px;
+		}
 	}
 }

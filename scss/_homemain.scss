@@ -75,7 +75,10 @@
 	}
 
 	div.eventTack{
+		margin: auto;
 		margin-top: 60px;
+		max-width: 750px;
+		
 		@include bp($large){
 			width: 63%;
 			float: left;
@@ -87,7 +90,6 @@
 	.eventsDate {
 		@include borderBack;
 		@include catColor($dark, $dark);
-		
 		
 		.typeTag {
 			background-color: $homeBack;
@@ -135,7 +137,10 @@
 				float: left;
 				margin-right: 1%;
 				clear: none;
+				padding-left: 119px;
 			}
+			
+
 			&:nth-child(8){
 				@include bp($med){
 					clear: left;
@@ -146,6 +151,14 @@
 				margin-right: 15px;
 				float: left;
 				padding-bottom: 0px; 
+				@include bp($med){
+					width: 119px;
+					margin-left: -134px;
+					margin-right: 0;
+
+					
+				}
+			
 			}
 			p.date {
 				margin: 0;
@@ -154,6 +167,8 @@
 			h3 {
 				font-size: .9em;
 				font-weight: regular;
+				margin-bottom: 0;
+				padding-bottom: 30px;
 			}
 			a.button {
 			
@@ -222,43 +237,56 @@
 	.eventText {
 		padding-left: 15px;
 		padding-right: 15px;
+		h3{
+			display: inline-block;
+			width: 65%;
+			margin-top: 15px;
+			vertical-align: top;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
 		@include bp($med2){
 			width: 46%;
 			margin-right: 2%;
 			margin-top: 20px;
 			display: inline-block;
 			vertical-align: top;
-			h3 {
-				margin-top: 0;
-				
-			}
 		}
-		@include bp($large){
+		@include bp(915px){
 			width: 22%;
 			vertical-align: top;
 		}
 	
-		p.date {
-			float: left;
-			width: 55px;
-			margin: 0 15px 0 0;
+		p.date, p.date2 {
+			display: inline-block;
+			width: 30%;
+			max-width: 55px;
+			margin: 15px 15px 0px 0;
+			padding-bottom: 0;
+		}
+		p.date2 {
+			max-width: 69px;
+			float: none;
+
+			@include bp(915px){
+				width: 38%;
+			}
+		}
+		.twoDates{
+			width: 100%;
 		}
 		@include bp($large){
 			h3 {
-				clear: both;
-				padding: 15px 0px 0;
+				width: 100%;
 				margin-bottom: 0;
 				text-align: left;
 			}
 		}
 		p.description {
 			clear: both;
-			margin: 10px 0px 0;
-			padding-top: 10px;
+			margin: 15px 0px 0;
+			padding-top: 0px;
 			font-size: .9em;
-			@include bp($large){
-				margin-top: 0;
-			}
 		}
 		a {
 			display: block;
